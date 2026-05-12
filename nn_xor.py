@@ -104,7 +104,7 @@ if __name__ == "__main__":
     print("-" * 40)
     for i in range(len(X)):
         predicted = 1 if final_predictions[i] > 0.5 else 0
-        # The fix: extract scalar from y_true[i] array
+        # The fix: 
         actual = int(y_true[i][0])
         correct = "✓" if predicted == actual else "✗"
         print(f"{X[i]}     |    {predicted}     |   {actual}   |   {correct}")
